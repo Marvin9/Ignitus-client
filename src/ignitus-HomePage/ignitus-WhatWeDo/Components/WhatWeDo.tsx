@@ -6,7 +6,7 @@ import { data } from '../constants';
 import { Paragraph } from '../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/typography';
 
 const WhatWeDo: React.FunctionComponent = () => (
-  <T.Wrapper id="what-we-do">
+  <T.Wrapper id="what-we-do" style={{ background: 'red' }}>
     <T.TopSection>
       <T.Title>What we Do?</T.Title>
       <Paragraph>
