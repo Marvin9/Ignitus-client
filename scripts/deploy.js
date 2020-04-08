@@ -16,7 +16,7 @@ const domain = `http://ignitus-preview-${gen}.surge.sh`;
 childProcess.exec(`./node_modules/.bin/surge ./build ${domain} --token ${SURGE_TOKEN}`, (err) => {
   if (err) {
     botComment(GITHUB_TOKEN, issuNumber, `Sorry @${USER}, Deploy Error 😶.`, () => {
-      process.exit(1);
+      process.exit(0);
     });
   } else {
     botComment(GITHUB_TOKEN, issuNumber, `Yey @${USER}\n\n Liver Preview is ready: ${domain}\n😎`);

@@ -13,8 +13,8 @@ if (user && command) {
     const isAuthorized = authorizedUsers.findIndex(
       assignedUser => assignedUser === user,
     );
-    if (isAuthorized === -1) process.exit(1);
-  } else process.exit(1);
+    if (isAuthorized === -1) process.exit(0);
+  } else process.exit(0);
 } else {
-  process.exit(1);
+  process.exit(0);
 }
