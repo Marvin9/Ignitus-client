@@ -1,5 +1,6 @@
 eslint:
   enabled: true
+  version: 6.8.0
   config_file: .eslintrc.json
 
 javscript:
