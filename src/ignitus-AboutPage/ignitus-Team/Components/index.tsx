@@ -10,7 +10,9 @@ const PureTeam = ({contributors}: any) => (
       <S.TitleWrapper>
         <S.Title>
           <S.Icon name={AppIcon.PlusIcon} />
-          {contributors.length} Contributors
+          {contributors.length}
+          {' '}
+          Contributors
         </S.Title>
         <S.StyledParagraph>
           This project was made possible by these contributors. 🎉 🎨
@@ -19,7 +21,9 @@ const PureTeam = ({contributors}: any) => (
       <S.ContributorsWrapper>
         <S.Contributors>{contributors}</S.Contributors>
         <S.Link href="https://github.com/Ignitus/Ignitus-client/graphs/contributors">
-          View All <S.Icon name={AppIcon.KeyBoardArrowDown} />
+          View All
+          {' '}
+          <S.Icon name={AppIcon.KeyBoardArrowDown} />
         </S.Link>
       </S.ContributorsWrapper>
     </S.Container>
@@ -33,7 +37,6 @@ export const Team = withErrorBoundary(
   }: TeamPropType) => {
     useEffect(() => {
       getContributorsData();
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (isFetching) {

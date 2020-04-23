@@ -12,7 +12,7 @@ export interface LogInProps {
   logInRequest: Function;
   logInData: authData;
   clearPreviousLogin: Function;
-};
+}
 
 const Login: React.FC<LogInProps> = ({
   logInRequest,
@@ -24,9 +24,9 @@ const Login: React.FC<LogInProps> = ({
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
-  useEffect(() => (() => clearPreviousLogin()),[clearPreviousLogin]);
+  useEffect(() => (() => clearPreviousLogin()), [clearPreviousLogin]);
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     clearPreviousLogin();
 

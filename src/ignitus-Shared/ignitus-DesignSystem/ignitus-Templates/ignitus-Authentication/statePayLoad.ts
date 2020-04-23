@@ -1,6 +1,6 @@
 import {
   LoginState,
-  SignupState
+  SignupState,
 } from './types';
 
 export const LoginStatePayload: LoginState = {

@@ -11,7 +11,7 @@ export const InterfaceAvatar: React.FC = () => {
     <Interface>
       <Heading2>
         Random Avatar
-    </Heading2>
+      </Heading2>
       <hr />
       <Avatar />
       <br />
@@ -20,4 +20,4 @@ export const InterfaceAvatar: React.FC = () => {
       </Button>
     </Interface>
   );
-}
+};

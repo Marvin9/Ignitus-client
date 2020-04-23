@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { mount } from 'enzyme';
 
@@ -11,7 +12,7 @@ describe('<Link>', () => {
     const wrapper = mount(
       <Link>
         Link
-      </Link>
+      </Link>,
     );
 
     expect(wrapper.find('a').length).toBe(1);
@@ -21,25 +22,25 @@ describe('<Link>', () => {
     const wrapper = mount(
       <Link href="#">
         Link
-      </Link>
+      </Link>,
     );
     const wrapperIgnitus = mount(
       <Link href="https://ignitus.org/interface">
         UI Kit
-      </Link>
+      </Link>,
     );
 
-    expect(wrapper.find('a').props()["rel"]).toBe(nr);
-    expect(wrapperIgnitus.find('a').props()["rel"]).toBe("");
+    expect(wrapper.find('a').props().rel).toBe(nr);
+    expect(wrapperIgnitus.find('a').props().rel).toBe('');
   });
 
   it('set rel="noopener" when target is _blank', () => {
     const wrapper = mount(
       <Link href="#" target="_blank">
         Link
-      </Link>
+      </Link>,
     );
 
-    expect(wrapper.find('a').props()["rel"]).toBe(`${nr} ${no}`);
+    expect(wrapper.find('a').props().rel).toBe(`${nr} ${no}`);
   });
 });

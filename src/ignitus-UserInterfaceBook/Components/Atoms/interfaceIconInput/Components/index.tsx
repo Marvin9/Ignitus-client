@@ -12,8 +12,8 @@ import {
 
 import {Interface} from '../../../../styles';
 
-const copy = value => console.log('copied: ', value);
-const handleChange = value => console.log('change: ', value);
+const copy = (value) => console.log('copied: ', value);
+const handleChange = (value) => console.log('change: ', value);
 
 const CustomDefaultIconInput = styled(DefaultIconInput)`
   flex-direction: row-reverse;

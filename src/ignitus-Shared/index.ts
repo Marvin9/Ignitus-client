@@ -42,6 +42,8 @@ export {WebsiteUnderConstruction} from './ignitus-DesignSystem/ignitus-Layout/ig
 /**
  * ignitus-Molecules
  */
+// Because Overlay imports Heading1 from this one, therefore disabling no-cycle wont create any harm
+// eslint-disable-next-line import/no-cycle
 export {default as Overlay} from './ignitus-DesignSystem/ignitus-Molecules/ignitus-Overlay/Components';
 
 /**
@@ -85,7 +87,7 @@ export {default as validate} from './ignitus-ErrorHandlingComponents/errorHandli
  * => ignitus-Utilities
  */
 
- /**
+/**
   * Components
   */
 export {Link} from './ignitus-Utilities/Components/Link';

@@ -11,7 +11,9 @@ const DefaultButtonWithIcon = ({
   ...rest
 }: BtnProps) => (
   <Button size={size} category={category} {...rest}>
-    {content} <StyledIcon name={name} category={category} size={size} />
+    {content}
+    {' '}
+    <StyledIcon name={name} category={category} size={size} />
   </Button>
 );
 

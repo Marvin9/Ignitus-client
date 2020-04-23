@@ -33,7 +33,7 @@ export const Input = styled.textarea<{ initialHeight?: string }>`
   outline: none;
   overflow: hidden;
   font-size: ${SM};
-  height: ${ props => props.initialHeight ? props.initialHeight : 'auto' };
+  height: ${(props) => (props.initialHeight ? props.initialHeight : 'auto')};
   resize: none;
   &::placeholder {
     color: ${C.GreyOne};

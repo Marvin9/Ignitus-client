@@ -2,7 +2,9 @@ import styled from '@emotion/styled';
 
 import {Normal, SM} from '../../../fonts';
 import Icon from '../../../../../ignitus-Utilities/Components/icon';
-import {GreyLight, IgnitusBlue, GreyText, White} from '../../../colors';
+import {
+  GreyLight, IgnitusBlue, GreyText, White,
+} from '../../../colors';
 
 export const InputContainer = styled.div`
   display: inline-flex;

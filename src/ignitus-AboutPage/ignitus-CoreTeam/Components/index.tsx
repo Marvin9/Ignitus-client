@@ -17,7 +17,9 @@ const PureCoreTeam = ({team}: any) => (
 );
 
 const TeamItem = ({
-  item: {title, img, description, linkedin, angellist},
+  item: {
+    title, img, description, linkedin, angellist,
+  },
 }: TeamItemProps) => {
   const [value, setValue] = React.useState(false);
   return (
@@ -43,9 +45,6 @@ const TeamItem = ({
 };
 
 export const CoreTeam = withErrorBoundary(() => {
-  const team = Data.map((item: Team) => {
-    return <TeamItem key={item.title} item={item} />;
-  });
+  const team = Data.map((item: Team) => <TeamItem key={item.title} item={item} />);
   return <PureCoreTeam team={team} />;
 });
-

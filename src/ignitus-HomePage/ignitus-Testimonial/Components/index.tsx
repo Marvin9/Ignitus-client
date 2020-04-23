@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events, no-underscore-dangle */
 import React, {useState, useEffect} from 'react';
 import * as T from '../style';
 
@@ -23,7 +25,7 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
                 <p>{testimonialData[currentIndex].description}</p>
               </T.Text>
               <T.Avatar>
-                <img src={Avatars[currentIndex]} alt={''} />
+                <img src={Avatars[currentIndex]} alt="" />
               </T.Avatar>
               <T.Name>{testimonialData[currentIndex].author}</T.Name>
               <T.Designation>
@@ -32,8 +34,8 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
             </T.Carousel>
           )}
           <T.Navigation>
-            {testimonialData.length > 0 &&
-              testimonialData.map((_, index) => (
+            {testimonialData.length > 0
+              && testimonialData.map((_, index) => (
                 <img
                   key={_._id}
                   src={Avatars[index]}

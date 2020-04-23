@@ -28,13 +28,13 @@ export const Heading3 = styled.h3`
 export const Heading4 = styled.h4<Props>`
   font-weight: ${F.Normal};
   font-size: ${F.LG};
-  color: ${props => (props.color ? props.color : C.IgnitusBlue)};
+  color: ${(props) => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
 export const Heading5 = styled.h5<Props>`
   font-weight: ${F.Bold};
   font-size: ${F.MD};
-  color: ${props => (props.color ? props.color : C.IgnitusBlue)};
+  color: ${(props) => (props.color ? props.color : C.IgnitusBlue)};
 `;
 
 export const Heading6 = styled.h6`
@@ -46,7 +46,7 @@ export const Heading6 = styled.h6`
 export const Paragraph = styled.p<Props>`
   font-size: ${F.SM};
   font-weight: ${F.Normal};
-  color: ${props => (props.color ? props.color : C.GreyText)};
+  color: ${(props) => (props.color ? props.color : C.GreyText)};
   margin: 0;
 `;
 

@@ -3,10 +3,10 @@ import {connect} from 'react-redux';
 import StudentLogin from '../../ignitus-StudentLogin/Components';
 import {
   mapDispatchToProps,
-  mapStateToProps
+  mapStateToProps,
 } from './utils';
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 )(StudentLogin);

@@ -23,7 +23,7 @@ export const SettingsContainer = styled(flexibleColDiv)`
 `;
 
 export const Layer = styled.div<Props>`
-  border-bottom: ${props => (props.border ? `1px solid ${GreyLight}` : 'null')};
+  border-bottom: ${(props) => (props.border ? `1px solid ${GreyLight}` : 'null')};
   color: ${IgnitusBlue};
   cursor: pointer;
   display: flex;
@@ -31,8 +31,8 @@ export const Layer = styled.div<Props>`
   justify-content: flex-start;
   font-size: ${MD};
   font-weight: ${Normal};
-  margin-top: ${props => (props.marginTop ? '0.5rem' : 'none')};
-  margin-bottom: ${props => (props.marginBottom ? '0.5rem' : 'none')};
+  margin-top: ${(props) => (props.marginTop ? '0.5rem' : 'none')};
+  margin-bottom: ${(props) => (props.marginBottom ? '0.5rem' : 'none')};
   padding: 1rem 0;
   width: 100%;
   flex-direction: row;

@@ -24,7 +24,7 @@ const DefaultIconInput = ({
           type={type}
           placeholder={placeholder}
           value={state}
-          onChange={e => {
+          onChange={(e) => {
             setValue(e.target.value);
           }}
         />

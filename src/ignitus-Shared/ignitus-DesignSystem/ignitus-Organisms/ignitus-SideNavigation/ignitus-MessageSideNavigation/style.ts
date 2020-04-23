@@ -24,14 +24,14 @@ export const MessageContainer = styled(flexibleColDiv)`
 `;
 
 export const Layer = styled.div<Props>`
-  border-bottom: ${props => (props.border ? `1px solid ${GreyLight}` : 'null')};
+  border-bottom: ${(props) => (props.border ? `1px solid ${GreyLight}` : 'null')};
   color: ${IgnitusBlue};
   cursor: pointer;
   font-size: ${MD};
   font-weight: ${Normal};
   padding: 1rem 0;
-  margin-top: ${props => (props.marginTop ? '0.5rem' : 'none')};
-  margin-bottom: ${props => (props.marginBottom ? '0.5rem' : 'none')};
+  margin-top: ${(props) => (props.marginTop ? '0.5rem' : 'none')};
+  margin-bottom: ${(props) => (props.marginBottom ? '0.5rem' : 'none')};
   width: 100%;
   display: flex;
   flex-direction: row;

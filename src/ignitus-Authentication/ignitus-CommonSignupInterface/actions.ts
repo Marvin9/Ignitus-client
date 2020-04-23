@@ -12,7 +12,9 @@ export const signUpRequest = (email: string, password: string, userType: 'studen
     throw new Error(`password must be string: ${password}`);
   }
 
-  return { type: t.SIGN_UP_REQUEST, email, password, userType };
+  return {
+    type: t.SIGN_UP_REQUEST, email, password, userType,
+  };
 };
 
 export const signUpResponse = (data) => {

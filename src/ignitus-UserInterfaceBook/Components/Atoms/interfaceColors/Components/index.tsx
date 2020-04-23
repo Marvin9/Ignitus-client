@@ -27,5 +27,14 @@ export const interfaceColors: React.FC = () => (
   </Interface>
 );
 
-const ColorsMapper: Function = ({colors}: {colors: string[]}): JSX.Element[] =>
-  colors.map((color: string) => <C.Color key={color} hex={color}> {color} </C.Color>);
+type colorsT = {
+  colors: string[];
+};
+
+const ColorsMapper: Function = ({colors}: colorsT): JSX.Element[] => colors.map((color: string) => (
+  <C.Color key={color} hex={color}>
+    {' '}
+    {color}
+    {' '}
+  </C.Color>
+));

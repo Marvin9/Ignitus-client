@@ -6,10 +6,10 @@ const avatarNames = [
   'grant',
   'melanie',
   'george',
-  'eugene'
+  'eugene',
 ];
 
-export const avatars: avatar[] = avatarNames.map((avatar) => ({
-  name: avatar,
-  src: `${pre}${avatar}.png`,
+export const avatars: avatar[] = avatarNames.map((avatarName) => ({
+  name: avatarName,
+  src: `${pre}${avatarName}.png`,
 }));

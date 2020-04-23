@@ -28,7 +28,9 @@ export const Form: FunctionComponent<FormProps> = ({
       {authenticationType === 'SignUp' && success && (
         <A.Message type="success">
           <A.Paragraph>
-            <strong>Success!</strong> Please login!.
+            <strong>Success!</strong>
+            {' '}
+            Please login!.
           </A.Paragraph>
         </A.Message>
       )}
@@ -46,7 +48,9 @@ export const Form: FunctionComponent<FormProps> = ({
       {state.invalidEmail && (
         <A.Message type="alert">
           <A.Paragraph>
-            <strong>Please </strong> input a valid mail!
+            <strong>Please </strong>
+            {' '}
+            input a valid mail!
           </A.Paragraph>
         </A.Message>
       )}
@@ -54,7 +58,9 @@ export const Form: FunctionComponent<FormProps> = ({
       {state.equalmessage && (
         <A.Message type="alert">
           <A.Paragraph>
-            <strong>Password </strong> does not match the confirm password.!
+            <strong>Password </strong>
+            {' '}
+            does not match the confirm password.!
           </A.Paragraph>
         </A.Message>
       )}
@@ -66,7 +72,7 @@ export const Form: FunctionComponent<FormProps> = ({
             type="string"
             state={state.email}
             placeholder="Email"
-            handleChange={email => {
+            handleChange={(email) => {
               setState({
                 ...state,
                 email,
@@ -77,7 +83,7 @@ export const Form: FunctionComponent<FormProps> = ({
           <A.PasswordInput
             placeholder="Password"
             state={state.password}
-            handleChange={password => {
+            handleChange={(password) => {
               setState({
                 ...state,
                 password,
@@ -92,7 +98,7 @@ export const Form: FunctionComponent<FormProps> = ({
                 type="password"
                 state={state.confirmPassword}
                 placeholder="Confirm Password"
-                handleChange={confirmPassword => {
+                handleChange={(confirmPassword) => {
                   setState({
                     ...state,
                     confirmPassword,
@@ -106,14 +112,19 @@ export const Form: FunctionComponent<FormProps> = ({
           <A.Button
             category="primary"
             size="large"
-            onClick={e => handleSubmit(e)}
+            onClick={(e) => handleSubmit(e)}
           >
             {' '}
-            {authenticationType} as {role}{' '}
+            {authenticationType}
+            {' '}
+            as
+            {role}
+            {' '}
           </A.Button>
         </A.ButtonContainer>
         <A.Paragraph>
-          {authRedirectText}{' '}
+          {authRedirectText}
+          {' '}
           <Link
             to={`/${alternateAuth.toLocaleLowerCase()}/${role.toLocaleLowerCase()}`}
           >

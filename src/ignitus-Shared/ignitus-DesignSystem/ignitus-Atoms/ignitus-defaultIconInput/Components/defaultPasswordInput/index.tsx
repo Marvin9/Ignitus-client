@@ -11,6 +11,10 @@ export const DefaultPasswordInput = ({
   state,
   ...rest
 }: DefaultPasswordInputProperties) => {
+  const [value, setValue] = useState<string>('');
+  const [type, setType] = useState<string>('password');
+  const [icon, setIcon] = useState<AppIcon>(AppIcon.EyeVisibleOffIcon);
+
   const handleClick = () => {
     if (type === 'password' && icon === AppIcon.EyeVisibleOffIcon) {
       setType('text');
@@ -20,10 +24,6 @@ export const DefaultPasswordInput = ({
       setIcon(AppIcon.EyeVisibleOffIcon);
     }
   };
-
-  const [value, setValue] = useState<string>('');
-  const [type, setType] = useState<string>('password');
-  const [icon, setIcon] = useState<AppIcon>(AppIcon.EyeVisibleOffIcon);
 
   useEffect(() => {
     handleChange(value);
@@ -37,7 +37,7 @@ export const DefaultPasswordInput = ({
           type={type}
           placeholder={placeholder}
           value={state}
-          onChange={e => {
+          onChange={(e) => {
             setValue(e.target.value);
             handleChange(value);
           }}

@@ -26,7 +26,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
         <S.FooterLinks toggle={featuresToggle}>
           <li>
             {' '}
-            <a href="#!">Resume</a>{' '}
+            <a href="#!">Resume</a>
+            {' '}
           </li>
           <li>
             {' '}
@@ -34,11 +35,13 @@ const PureFooter: React.FunctionComponent<Props> = ({
           </li>
           <li>
             {' '}
-            <a href="#!">Interships</a>{' '}
+            <a href="#!">Interships</a>
+            {' '}
           </li>
           <li>
             {' '}
-            <a href="#!">OpenSource</a>{' '}
+            <a href="#!">OpenSource</a>
+            {' '}
           </li>
         </S.FooterLinks>
       </S.FooterSections>
@@ -50,11 +53,13 @@ const PureFooter: React.FunctionComponent<Props> = ({
         <S.FooterLinks toggle={communityToggle}>
           <li>
             {' '}
-            <a href="#!">Personal</a>{' '}
+            <a href="#!">Personal</a>
+            {' '}
           </li>
           <li>
             {' '}
-            <a href="#!">Partners</a>{' '}
+            <a href="#!">Partners</a>
+            {' '}
           </li>
           <li>
             {' '}
@@ -64,7 +69,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
               href="https://www.quora.com/What-are-Ignitus-and-WooTech-about"
             >
               Ignitus Woo-Tech
-            </a>{' '}
+            </a>
+            {' '}
           </li>
           <li>
             {' '}
@@ -74,7 +80,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
               href="https://medium.com/@afelio_22020/introducing-ignitus-scholar-6b0c677ba9d7"
             >
               Ignitus Scholar
-            </a>{' '}
+            </a>
+            {' '}
           </li>
         </S.FooterLinks>
       </S.FooterSections>
@@ -95,7 +102,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
               href="https://www.facebook.com/Ignitus.org/"
             >
               About
-            </a>{' '}
+            </a>
+            {' '}
           </li>
           <li>
             {' '}
@@ -105,7 +113,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
               href="https://angel.co/ignitus-2/jobs"
             >
               Careers
-            </a>{' '}
+            </a>
+            {' '}
           </li>
           <li>
             {' '}
@@ -115,7 +124,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
               href="https://medium.com/swlh/ignitus-connecting-students-with-opportunities-61f08e19861c"
             >
               Blog
-            </a>{' '}
+            </a>
+            {' '}
           </li>
         </S.FooterLinks>
       </S.FooterSections>
@@ -127,19 +137,23 @@ const PureFooter: React.FunctionComponent<Props> = ({
         <S.FooterLinks toggle={linkToggle}>
           <li>
             {' '}
-            <Link to="/#!">Home</Link>{' '}
+            <Link to="/#!">Home</Link>
+            {' '}
           </li>
           <li>
             {' '}
-            <Link to="/#what-we-do">What we Do?</Link>{' '}
+            <Link to="/#what-we-do">What we Do?</Link>
+            {' '}
           </li>
           <li>
             {' '}
-            <Link to="/interface">Design System</Link>{' '}
+            <Link to="/interface">Design System</Link>
+            {' '}
           </li>
           <li>
             {' '}
-            <Link to="/#contributors">Contributors</Link>{' '}
+            <Link to="/#contributors">Contributors</Link>
+            {' '}
           </li>
         </S.FooterLinks>
       </S.FooterSections>
@@ -156,7 +170,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.FacebookIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -167,7 +182,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.TwitterIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -178,7 +194,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.AngelListIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -189,7 +206,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.SlackIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -200,7 +218,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.LinkedInIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -211,7 +230,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.GithubIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -222,7 +242,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.MediumIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
         <li>
           {' '}
@@ -233,7 +254,8 @@ const PureFooter: React.FunctionComponent<Props> = ({
           >
             {' '}
             <S.Icon name={AppIcon.YouTubeIcon} />
-          </a>{' '}
+          </a>
+          {' '}
         </li>
       </S.FooterSocial>
     </S.Socials>
@@ -247,7 +269,7 @@ export const Footer = withErrorBoundary(() => {
   const [companyToggle, setCompanyToggle] = useState(true);
   const [linkToggle, setLinkToggle] = useState(true);
 
-  const hideUnhide = toToggle => {
+  const hideUnhide = (toToggle) => {
     if (toToggle === 'featuresToggle') {
       setFeaturesToggle(!featuresToggle);
     }

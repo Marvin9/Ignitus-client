@@ -12,9 +12,10 @@ export const Notfound = () => (
       <S.AnimationText />
       <S.MessageContainer>
         <S.Message>
-          <S.StyledParagraph>Looks like you're lost!</S.StyledParagraph>
+          <S.StyledParagraph>Looks like you&apos;re lost!</S.StyledParagraph>
           <S.StyledParagraph>
-            The page you are looking for is not available!{' '}
+            The page you are looking for is not available!
+            {' '}
             <span role="img" aria-label="hammer">
               🔨
             </span>

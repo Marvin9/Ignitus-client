@@ -2,7 +2,9 @@ import styled from '@emotion/styled';
 
 import {flexibleRowDiv, flexibleColDiv} from '../../../shared';
 import {Card} from '../../../ignitus-Atoms/atoms';
-import {White, IgnitusBlue, GreyOne, GreyTwo, boxShadowColor} from '../../../ignitus-Atoms/colors';
+import {
+  White, IgnitusBlue, GreyOne, GreyTwo, boxShadowColor,
+} from '../../../ignitus-Atoms/colors';
 import {MD, Normal} from '../../../ignitus-Atoms/fonts';
 
 import Icon from '../../../../ignitus-Utilities/Components/icon';

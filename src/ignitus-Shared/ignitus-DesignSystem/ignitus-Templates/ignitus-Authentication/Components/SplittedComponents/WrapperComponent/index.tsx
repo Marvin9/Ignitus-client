@@ -3,10 +3,10 @@ import * as A from '../../../styles';
 
 export const Wrapper: FunctionComponent<{
   children: React.ReactNode;
-}> = props => (
+}> = ({ children }) => (
   <A.Container>
     <A.AuthenticationWrapper>
-      <A.Row>{props.children}</A.Row>
+      <A.Row>{children}</A.Row>
     </A.AuthenticationWrapper>
   </A.Container>
 );

@@ -7,7 +7,6 @@ export const PrivateRoute = ({ Component }: any) => (
       <Component />
     ) : (
       <Redirect to="/login/student" />
-    ))
-    }
+    ))}
   />
 );

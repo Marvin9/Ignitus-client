@@ -12,7 +12,7 @@ function* signIn(action) {
   try {
     const data = yield call(api.signIn, email, password, userType);
     if (!data.data.data) {
-      throw { ...data };
+      throw new Error({ ...data });
     } else {
       localStorage.setItem('authenticated', 'true');
       localStorage.setItem('data', JSON.stringify(data.data.data.clientData));

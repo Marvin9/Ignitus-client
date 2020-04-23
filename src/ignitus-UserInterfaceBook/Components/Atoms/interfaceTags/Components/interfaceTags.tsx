@@ -13,26 +13,26 @@ const interfaceTags: React.FC = () => (
     <hr />
 
     <DefaultTag1
-      label={'Sophia_resume.pdf'}
+      label="Sophia_resume.pdf"
       color={C.IgnitusBlue}
       background={C.SecondaryColor}
     />
     <br />
     <DefaultTag2
-      label={'publication_report.pdf'}
+      label="publication_report.pdf"
       color={C.IgnitusBlue}
       background={C.GreyOne}
     />
 
     <br />
     <DefaultTag3
-      label={'Full Time'}
+      label="Full Time"
       color={C.White}
       background={C.IgnitusBlue}
     />
     <br />
     <DefaultTag3
-      label={'Literature'}
+      label="Literature"
       color={C.IgnitusBlue}
       background={C.White}
     />

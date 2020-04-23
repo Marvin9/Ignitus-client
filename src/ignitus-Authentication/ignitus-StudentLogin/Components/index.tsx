@@ -4,7 +4,7 @@ import {
   isEmpty,
   withErrorBoundary,
   SharedAuthentication,
-  LoginStatePayload
+  LoginStatePayload,
 } from '../../../ignitus-Shared';
 import { LogInProps } from '../types';
 
@@ -12,7 +12,7 @@ const Login: FunctionComponent<LogInProps> = ({ logInRequest, logInData, clearPr
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;
 
-  useEffect(() => (() => clearPreviousLogin()),[clearPreviousLogin]);
+  useEffect(() => (() => clearPreviousLogin()), [clearPreviousLogin]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

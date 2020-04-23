@@ -109,7 +109,7 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.KeyBoardArrowRight:
       return <KeyBoardArrowRight {...rest} />;
 
-    case AppIcon.IgnitusFullLogo:
+    case AppIcon.IgnitusFullLogo: default:
       return <IgnitusFullLogo {...rest} />;
 
     case AppIcon.CreateIcon:
@@ -182,10 +182,10 @@ const Icon = ({name, ...rest}: Props) => {
       return <YouTubeIcon {...rest} />;
 
     case AppIcon.ContributionIcon:
-      return <ContributionIcon {...rest} />
+      return <ContributionIcon {...rest} />;
 
     case AppIcon.StarCircleIcon:
-      return < StarCircleIcon {...rest} />
+      return <StarCircleIcon {...rest} />;
   }
 };
 

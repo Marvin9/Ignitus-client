@@ -3,7 +3,6 @@ import React from 'react';
 import {Props, State} from './types';
 
 export class ErrorBoundary extends React.Component<Props, State> {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -50,7 +49,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
   }
 }
 
-export const withErrorBoundary = WrappedComponent => props => (
+export const withErrorBoundary = (WrappedComponent) => (props) => (
   <ErrorBoundary>
     <WrappedComponent {...props} />
   </ErrorBoundary>

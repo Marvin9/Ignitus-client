@@ -12,5 +12,5 @@ export const List = [
       'Church and civil courts in late medieval and early modern Melbourne.',
     subtitle: 'By The University of PortsMouth',
     src: 'https://storage.googleapis.com/ignitus_assets/ig-opportunities/universityOfMelbourne.png',
-  }
+  },
 ];

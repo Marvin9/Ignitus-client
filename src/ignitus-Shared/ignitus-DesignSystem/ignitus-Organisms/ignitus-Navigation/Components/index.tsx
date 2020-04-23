@@ -73,8 +73,9 @@ const Navigation: React.FunctionComponent = () => {
 
 export const OptionalNavigation: React.FC<NavigationProps> = React.memo(
   ({transparentNavigation = false}) => {
-    if (!transparentNavigation)
+    if (!transparentNavigation) {
       return <PureNavigation transparentNavigation={transparentNavigation} />;
+    }
     return <Navigation />;
   },
 );

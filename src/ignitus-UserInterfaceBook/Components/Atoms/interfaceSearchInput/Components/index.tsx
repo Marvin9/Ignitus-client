@@ -9,9 +9,9 @@ export const interfaceSearchInput: React.FC = () => (
     <hr />
 
     <DefaultSearchInput
-      placeholder={'Search @user'}
-      type={'text'}
-      name={'name'}
+      placeholder="Search @user"
+      type="text"
+      name="name"
     />
   </Interface>
 );

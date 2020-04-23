@@ -6,7 +6,7 @@ export type authType = 'LogIn' | 'SignUp';
 export interface authData {
   isFetching: boolean;
   message: string;
-  success: boolean | undefined; // SEE PROFESSOR SIGNUP COMPONENT, remove undefined once implemented.
+  success: boolean | undefined;
 }
 
 export interface LoginState {
