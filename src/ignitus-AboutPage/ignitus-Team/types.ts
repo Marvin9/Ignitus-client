@@ -1,5 +1,3 @@
-import { getContributorsData } from "./actions";
-
 export type TeamActionType = {
   type: string;
   data?: any;
@@ -34,6 +32,6 @@ export type TeamReducerReturnType = {
 };
 
 export type TeamPropType = {
-  getContributorsData: typeof getContributorsData,
+  getContributorsData: Function,
   contributorsData: TeamReducerReturnType
-}
+};

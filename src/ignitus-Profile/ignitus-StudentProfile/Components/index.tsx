@@ -40,10 +40,12 @@ export const StudentProfile = () => (
         <Heading title="Research Fields" icon={AppIcon.LocalLibraryIcon} />
         <P.Content>
           <RoundedButton size="medium" category="grey">
-            Psycholinguistics{' '}
+            Psycholinguistics
+            {' '}
           </RoundedButton>
           <RoundedButton size="medium" category="grey">
-            Modernist Literature{' '}
+            Modernist Literature
+            {' '}
           </RoundedButton>
         </P.Content>
       </P.ElementContainer>

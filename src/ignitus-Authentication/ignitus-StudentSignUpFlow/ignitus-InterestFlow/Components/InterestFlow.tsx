@@ -9,7 +9,7 @@ import {
   Heading1,
   RoundedButton,
   DefaultCheckbox,
-  withErrorBoundary
+  withErrorBoundary,
 } from '../../../../ignitus-Shared';
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';
 import * as C from '../Styles/style';

@@ -6,22 +6,18 @@ import { Notfound } from '../../ignitus-Shared';
 import { LazyLoader } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 import { PrivateRoute } from '../ignitus-PrivateRoutes';
 
-const LazyStudentDashBoard = lazy(() =>
-  import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'),
-);
+const LazyStudentDashBoard = lazy(() => import('../../ignitus-Dashboard/ignitus-StudentDashboard/Components'));
 
-const LazyDashBoardNavigation = lazy(() =>
-  import('../../ignitus-Dashboard/ignitus-DashboardHeader/Containers'),
-);
+const LazyDashBoardNavigation = lazy(() => import('../../ignitus-Dashboard/ignitus-DashboardHeader/Containers'));
 
 export const DashboardRoutes = () => (
   <React.Fragment>
     <Suspense
-      fallback={
+      fallback={(
         <Fragment>
           <LazyLoader />
         </Fragment>
-      }
+      )}
     >
       <LazyDashBoardNavigation />
       <Switch>

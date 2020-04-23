@@ -13,7 +13,7 @@ const DashBoardNavigation: React.FC = ({logUserOut}: any) => {
   };
 
   const [isExpanded, toogleIsExpanded] = useToggle(false);
-  let userInformation: string | null = localStorage.getItem('data');
+  const userInformation: string | null = localStorage.getItem('data');
   let userEmail: string = '';
 
   if (localStorage.getItem('data') && typeof userInformation === 'string') {

@@ -9,16 +9,18 @@ export const WhatWeDo: React.FunctionComponent = withErrorBoundary(() => (
     <T.TopSection>
       <T.Title>What we Do?</T.Title>
       <S.Paragraph>
-        Guidance{' '}
+        Guidance
+        {' '}
         <span role="img" aria-label="hat">
           🎓
-        </span>{' '}
+        </span>
+        {' '}
         in well researched and goal-oriented courses, Internships etc.
       </S.Paragraph>
     </T.TopSection>
     <T.BootStrapSection>
       <T.BottomRow>
-        {[...data].map(x => (
+        {[...data].map((x) => (
           <S.Card key={x.src}>
             <S.CardPicture src={x.src} alt="logo" />
             <S.Paragraph>{x.description}</S.Paragraph>

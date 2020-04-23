@@ -62,10 +62,10 @@ export const ImageContainer = styled(flexibleRowDiv)`
 `;
 
 export const Paragraph = styled(P)<ParagraphProps>`
-  color: ${props => (props.primary ? C.IgnitusBlue : C.GreySecondaryText)};
+  color: ${(props) => (props.primary ? C.IgnitusBlue : C.GreySecondaryText)};
   font-weight: ${Normal};
   display: inline;
-  margin: ${props => props.margin};
+  margin: ${(props) => props.margin};
 `;
 
 export const Name = styled(Heading1)`

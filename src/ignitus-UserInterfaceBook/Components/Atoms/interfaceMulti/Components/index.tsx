@@ -12,7 +12,7 @@ export const interfaceMultiMediaInput = () => (
       placeholder={
         'Share an article, poll, document, video, photo or an idea.\nUse @ to mention someone \n\n'
       }
-      name={'name'}
+      name="name"
     />
   </Interface>
 );

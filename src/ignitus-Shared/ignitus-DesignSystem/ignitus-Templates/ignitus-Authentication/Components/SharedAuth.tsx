@@ -7,12 +7,10 @@ import {withErrorBoundary} from '../../../../ignitus-ErrorHandlingComponents/err
 const SharedAuthComponent: FunctionComponent<Props> = (props: Props) => {
   const {role, authenticationType, authenticationData} = props;
   const alternateRole: userRole = role === 'Student' ? 'Professor' : 'Student';
-  const alternateAuth: authType =
-    authenticationType === 'LogIn' ? 'SignUp' : 'LogIn';
-  const authRedirectText: string =
-    authenticationType === 'LogIn'
-      ? `Don't have an account?`
-      : `Already have an account?`;
+  const alternateAuth: authType = authenticationType === 'LogIn' ? 'SignUp' : 'LogIn';
+  const authRedirectText: string = authenticationType === 'LogIn'
+    ? 'Don\'t have an account?'
+    : 'Already have an account?';
   const {success} = authenticationData;
 
   if (authenticationType === 'LogIn' && success) {

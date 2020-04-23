@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import * as T from '../../ignitus-Atoms/typography';
 import * as C from '../../ignitus-Atoms/colors';
-import {flexibleColDiv, flexibleRowDiv} from '../../shared';
+import {flexibleColDiv, flexibleRowDiv, Paragraph} from '../../shared';
 import {Normal, MD} from '../../ignitus-Atoms/fonts';
 import ApplyIcon from '../../ignitus-Assets/ignitus-Icons/applyIcon/applyIcon';
-import {Paragraph} from '../../shared';
+
 
 export const OpportunityList = styled(flexibleColDiv)``;
 

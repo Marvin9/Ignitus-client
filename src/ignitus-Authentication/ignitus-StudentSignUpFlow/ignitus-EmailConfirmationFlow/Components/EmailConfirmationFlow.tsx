@@ -8,7 +8,7 @@ import {
   Paragraph,
   Heading2,
   RoundedButton,
-  withErrorBoundary
+  withErrorBoundary,
 } from '../../../../ignitus-Shared';
 
 import * as T from '../../ignitus-WelcomeFlow/Styles/style';

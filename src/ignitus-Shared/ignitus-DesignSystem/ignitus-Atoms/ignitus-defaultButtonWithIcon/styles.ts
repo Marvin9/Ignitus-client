@@ -7,6 +7,6 @@ import {
 } from '../../../ignitus-Utilities/HelperFunctions/emotionHelpers';
 
 export const StyledIcon = styled(Icon)<ButtonProperties>`
-  width: ${props => getIconDimension(props)};
-  fill: ${props => getColor(props)};
+  width: ${(props) => getIconDimension(props)};
+  fill: ${(props) => getColor(props)};
 `;

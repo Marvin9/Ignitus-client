@@ -27,16 +27,16 @@ export const NavigationContainer = styled.nav`
 `;
 
 export const Heading = styled.h5<SubNestingProps>`
-  font-size: ${props => (props.nesting ? SM : XL)};
-  color: ${props => (props.nesting ? C.GreyText : C.IgnitusBlue)};
-  font-weight: ${props => (props.nesting ? Light : Medium)};
-  padding: ${props => (props.nesting ? '0.5rem' : '0')};
+  font-size: ${(props) => (props.nesting ? SM : XL)};
+  color: ${(props) => (props.nesting ? C.GreyText : C.IgnitusBlue)};
+  font-weight: ${(props) => (props.nesting ? Light : Medium)};
+  padding: ${(props) => (props.nesting ? '0.5rem' : '0')};
   margin-bottom: 0;
 `;
 
 export const UnorderedList = styled.ul<ArrowProps>`
   list-style: none;
-  display: ${props => (props.isexpanded ? 'block' : 'none')};
+  display: ${(props) => (props.isexpanded ? 'block' : 'none')};
 
   a {
     text-decoration: none;
@@ -45,8 +45,8 @@ export const UnorderedList = styled.ul<ArrowProps>`
 `;
 
 export const ListItem = styled.li<SubNestingProps>`
-  margin-left: ${props => (props.nesting ? '0.5rem' : '0')};
-  margin-left: ${props => (props.level ? `${props.level/2}rem` : '0rem')};
+  margin-left: ${(props) => (props.nesting ? '0.5rem' : '0')};
+  margin-left: ${(props) => (props.level ? `${props.level / 2}rem` : '0rem')};
   padding: 0.5rem;
   cursor: pointer;
   &:hover {
@@ -56,15 +56,15 @@ export const ListItem = styled.li<SubNestingProps>`
 `;
 
 export const Arrow = styled(Icon, { shouldForwardProp: isPropValid })<ArrowProps>`
-  height: ${props => (props.nesting ? '1.5rem' : '2rem')};
-  fill: ${props => (props.nesting ? C.GreyText : C.IgnitusBlue)};
-  transform: ${props => (props.isexpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
+  height: ${(props) => (props.nesting ? '1.5rem' : '2rem')};
+  fill: ${(props) => (props.nesting ? C.GreyText : C.IgnitusBlue)};
+  transform: ${(props) => (props.isexpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;
 `;
 
 export const HeadingArrowContainer = styled(flexibleRowDiv)<SubNestingProps>`
-  margin-top: ${props => (props.nesting ? '0' : '1rem')};
-  margin-left: ${props => (props.level ? `${props.level/2}rem` : '0rem')};
+  margin-top: ${(props) => (props.nesting ? '0' : '1rem')};
+  margin-left: ${(props) => (props.level ? `${props.level / 2}rem` : '0rem')};
   justify-content: unset;
   cursor: pointer;
 `;

@@ -10,5 +10,5 @@ export const Avatar: React.FC<HTMLAttributes<HTMLImageElement>> = ({
 }) => {
   const av: avatar = randomAvatar();
 
-  return <AvatarImage src={av.src} alt={av.name} {...all} />
+  return <AvatarImage src={av.src} alt={av.name} {...all} />;
 };

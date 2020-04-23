@@ -83,7 +83,7 @@ export const FooterLinks = styled('ul')<FooterLinkprops>`
     }
   }
   ${maximumWidthQuery[3]} {
-    display: ${props => (props.toggle ? `none` : 'block')};
+    display: ${(props) => (props.toggle ? 'none' : 'block')};
   }
 `;
 

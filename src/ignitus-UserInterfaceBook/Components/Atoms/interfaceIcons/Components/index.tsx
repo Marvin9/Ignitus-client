@@ -23,7 +23,8 @@ export const interfaceIcons: React.FC = () => (
     <br />
     <br />
     <Heading2>
-      Social Icons{' '}
+      Social Icons
+      {' '}
       <span role="img" aria-label="paint">
         🎨
       </span>
@@ -42,5 +43,10 @@ export const interfaceIcons: React.FC = () => (
   </Interface>
 );
 
-const IconsMapper: Function = ({icons}: {icons: AppIcon[]}): JSX.Element[] =>
-  icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />);
+type IconsT = {
+  icons: AppIcon[];
+};
+
+const IconsMapper: Function = ({icons}: IconsT): JSX.Element[] => (
+  icons.map((icon: AppIcon) => <I.StyledIcon name={icon} />)
+);

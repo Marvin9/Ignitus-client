@@ -12,6 +12,6 @@ export const Color = styled.div<color>`
   padding: 0.5rem;
   width: 6rem;
   margin: 0.5rem;
-  color: ${props => (hexDifferentiate(props.hex) ? C.Black : C.White)};
-  background: ${props => props.hex};
+  color: ${(props) => (hexDifferentiate(props.hex) ? C.Black : C.White)};
+  background: ${(props) => props.hex};
 `;

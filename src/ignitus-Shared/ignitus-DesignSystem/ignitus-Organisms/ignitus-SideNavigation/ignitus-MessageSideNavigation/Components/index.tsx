@@ -13,10 +13,10 @@ type props = {
 export default function MessageSideNavigation() {
   return (
     <S.MessageContainer>
-      <Layer text="Direct Messages" marginTop={true} />
+      <Layer text="Direct Messages" marginTop />
       <Layer text="Mentors" />
       <Layer text="Organizations" />
-      <Layer text="Groups" border={false} marginBottom={true} />
+      <Layer text="Groups" border={false} marginBottom />
     </S.MessageContainer>
   );
 }
@@ -28,7 +28,9 @@ const Layer = ({
   marginBottom = false,
 }: props) => (
   <S.Layer border={border} marginTop={marginTop} marginBottom={marginBottom}>
-    <Paragraph color={IgnitusBlue}>{text}</Paragraph> <Notification />
+    <Paragraph color={IgnitusBlue}>{text}</Paragraph>
+    {' '}
+    <Notification />
   </S.Layer>
 );
 

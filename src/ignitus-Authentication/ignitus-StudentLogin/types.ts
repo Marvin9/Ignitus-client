@@ -4,4 +4,4 @@ export interface LogInProps {
   logInRequest: Function;
   logInData: authData;
   clearPreviousLogin: Function;
-};
+}

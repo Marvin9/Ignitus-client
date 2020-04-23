@@ -15,7 +15,7 @@ type props = {
 export default function DashboardNavigation() {
   return (
     <S.SettingsContainer>
-      <Layer text="Saved" marginTop={true} name={AppIcon.SaveIcon} />
+      <Layer text="Saved" marginTop name={AppIcon.SaveIcon} />
       <Layer text="Liked" name={AppIcon.HeartIcon} />
       <Layer text="Applied" name={AppIcon.ApplyIcon} />
       <Layer text="Network" name={AppIcon.NetworkIcon} />
@@ -23,7 +23,7 @@ export default function DashboardNavigation() {
       <Layer
         text="Message"
         border={false}
-        marginBottom={true}
+        marginBottom
         name={AppIcon.MessageIcon}
       />
     </S.SettingsContainer>

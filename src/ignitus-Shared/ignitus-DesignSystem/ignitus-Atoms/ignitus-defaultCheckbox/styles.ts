@@ -13,4 +13,4 @@ export const Label = styled.label`
 
 export const StyledParagraph = styled(Paragraph)`
   font-size: ${MD}
-`
+`;

@@ -33,7 +33,8 @@
     "start": "react-scripts start",
     "heroku-postbuild": "react-scripts build",
     "build": "npm run heroku-postbuild && sw-precache --config=sw-precache-config.js",
-    "lint": "eslint ./src",
+    "lint": "eslint ./src --ext .ts,.tsx --cache",
+    "lint:fix": "eslint ./src --ext .ts,.tsx --fix",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "test:update": "npm test --updateSnapshot"
@@ -53,6 +54,7 @@
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb-typescript": "7.2.1",
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.19.0",

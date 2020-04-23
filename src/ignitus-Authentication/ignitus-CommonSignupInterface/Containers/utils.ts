@@ -9,5 +9,6 @@ export const mapStateToProps = createStructuredSelector({
   signUpData: makeSelectData(),
 });
 
-export const mapDispatchToProps = dispatch =>
-  bindActionCreators({signUpRequest, clearPreviousSignUp}, dispatch);
+export const mapDispatchToProps = (dispatch) => (
+  bindActionCreators({signUpRequest, clearPreviousSignUp}, dispatch)
+);

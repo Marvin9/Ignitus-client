@@ -23,8 +23,8 @@ export const Navigation = styled.nav<NavigationProps>`
   z-index: 2;
   justify-content: space-between;
   transition: background-color 300ms ease-in;
-  background: ${props => (props.transparentNavigation ? 'transparent' : White)};
-  box-shadow: ${props => (props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`)};
+  background: ${(props) => (props.transparentNavigation ? 'transparent' : White)};
+  box-shadow: ${(props) => (props.transparentNavigation ? 'none' : `0 2px 4px 0 ${boxShadowColor}`)};
   padding: 0.5rem;
   @media only screen and (max-width: 1042px) {
     flex-direction: column;
@@ -65,15 +65,14 @@ export const NavigationLinks = styled.ul<ToggleProps>`
     align-items: center;
     justify-content: center;
     width: 100%;
-    display: ${props => (props.isExpanded ? 'none' : 'flex')};
-    animation: ${props =>
-      props.isExpanded
-        ? css`
+    display: ${(props) => (props.isExpanded ? 'none' : 'flex')};
+    animation: ${(props) => (props.isExpanded
+    ? css`
             ${fadeOut} 2s ease
           `
-        : css`
+    : css`
             ${fadeIn} 2s ease
-          `};
+          `)};
   }
 `;
 
@@ -84,7 +83,7 @@ export const NavigationLinkItem = styled.li<NavigationProps>`
   a {
     font-size: ${XS};
     font-weight: ${SemiBold};
-    color: ${props => (props.transparentNavigation ? White : IgnitusBlue)};
+    color: ${(props) => (props.transparentNavigation ? White : IgnitusBlue)};
     &:hover {
       color: ${SecondaryColor};
     }
@@ -111,7 +110,7 @@ export const Burger = styled(Icon, { shouldForwardProp: isValidProps })<TogglePr
   display: none;
   cursor: pointer;
   width: 2rem;
-  transform: ${props => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
+  transform: ${(props) => (props.isExpanded ? 'rotate(90deg)' : 'rotate(0deg)')};
   transition: transform 200ms ease-in-out;
 
   @media only screen and (max-width: 1042px) {

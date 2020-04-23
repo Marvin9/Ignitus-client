@@ -8,12 +8,13 @@ import {
   Heading5,
   Paragraph,
   Heading6,
+  minimumWidthQuery,
 } from '../../ignitus-Shared';
 import {TitleProps} from './types';
 import {default as I} from '../../ignitus-Shared/ignitus-Utilities/Components/icon';
 import * as C from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/colors';
 import * as F from '../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/fonts';
-import { minimumWidthQuery } from '../../ignitus-Shared';
+
 
 export const ParentContainer = styled(Container)`
   margin: 10rem auto;
@@ -35,11 +36,9 @@ export const ElementContainer = styled(Container)`
 
 export const Title = styled(Heading5)<TitleProps>`
   padding: 0.5rem 2rem;
-  font-weight: ${props =>
-    props.fontStyle === 'paragraph' ? F.Medium : F.Bold};
-  font-size: ${props => (props.fontStyle === 'paragraph' ? F.SM : F.MD)};
-  color: ${props =>
-    props.fontStyle === 'paragraph' ? C.GreyText : C.IgnitusBlue};
+  font-weight: ${(props) => (props.fontStyle === 'paragraph' ? F.Medium : F.Bold)};
+  font-size: ${(props) => (props.fontStyle === 'paragraph' ? F.SM : F.MD)};
+  color: ${(props) => (props.fontStyle === 'paragraph' ? C.GreyText : C.IgnitusBlue)};
 `;
 
 export const TitleWrapper = styled.div`
