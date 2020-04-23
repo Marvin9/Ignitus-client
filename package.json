@@ -33,7 +33,7 @@
     "start": "react-scripts start",
     "heroku-postbuild": "react-scripts build",
     "build": "npm run heroku-postbuild && sw-precache --config=sw-precache-config.js",
-    "lint": "eslint ./src --ext .ts,.tsx",
+    "lint": "eslint ./src --ext .ts,.tsx --cache",
     "lint:fix": "eslint ./src --ext .ts,.tsx --fix",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
