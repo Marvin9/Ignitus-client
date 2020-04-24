@@ -25,7 +25,7 @@ export default function OpportunityFilters() {
     ...Tags,
     [type]: e.target.textContent,
   });
-  const resetTag = type => setTags({
+  const resetTag = (type) => setTags({
     ...Tags,
     [type]: '',
   });
@@ -49,7 +49,7 @@ export default function OpportunityFilters() {
           <S.SearchIcon name={AppIcon.SearchIcon} />
           <S.SelectedFilters>
             {
-              Object.keys(Tags).map(key => (Tags[key] && (
+              Object.keys(Tags).map((key) => (Tags[key] && (
                 <S.RoundedDefaultButtonWithIcon size="medium" onClick={() => resetTag(key)} category="primary" key={key} name={AppIcon.CrossIcon} content={Tags[key]} />
               )))
             }
@@ -63,7 +63,7 @@ export default function OpportunityFilters() {
               type="text"
               name="keyword"
               value={keyWords.keywords}
-              onChange={e => setKeyWords({ keywords: e.target.value })}
+              onChange={(e) => setKeyWords({ keywords: e.target.value })}
               placeholder="Search Keyword"
             />
           </S.SearchInputContainer>
@@ -75,7 +75,7 @@ export default function OpportunityFilters() {
       </S.TopContainer>
       <S.BottomContainer>
         {
-          Object.keys(Tags).map(key => (
+          Object.keys(Tags).map((key) => (
             <S.ButtonDropDownContainer key={key}>
               {
                 key === 'dummyDates'
@@ -112,9 +112,9 @@ export default function OpportunityFilters() {
               }
               <S.OptionSelector>
                 {
-                  dummyData[key].map(value => (
+                  dummyData[key].map((value) => (
                     <S.Option key={value}>
-                      <S.OptionText key={value} onClick={e => handlechange(e, key)}>
+                      <S.OptionText key={value} onClick={(e) => handlechange(e, key)}>
                         {value}
                       </S.OptionText>
                     </S.Option>

@@ -3,14 +3,14 @@ import React, { useState, useEffect } from 'react';
 import {
   SharedAuthentication,
   LoginStatePayload,
-  authData,
+  AuthData,
   withErrorBoundary,
   isEmpty,
 } from '../../../ignitus-Shared';
 
 export interface LogInProps {
   logInRequest: Function;
-  logInData: authData;
+  logInData: AuthData;
   clearPreviousLogin: Function;
 }
 
@@ -19,7 +19,7 @@ const Login: React.FC<LogInProps> = ({
   logInData,
   clearPreviousLogin,
 }) => {
-  const professorLogInData: authData = logInData;
+  const professorLogInData: AuthData = logInData;
 
   const [state, setState] = useState(LoginStatePayload);
   const { email, password } = state;

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export type TeamActionType = {
   type: string;
   data?: any;
@@ -32,6 +33,6 @@ export type TeamReducerReturnType = {
 };
 
 export type TeamPropType = {
-  getContributorsData: Function,
-  contributorsData: TeamReducerReturnType
+  getContributorsData: Function;
+  contributorsData: TeamReducerReturnType;
 };
