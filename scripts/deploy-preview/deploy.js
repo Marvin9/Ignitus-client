@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 const randomstring = require('randomstring');
 const childProcess = require('child_process');
 const botComment = require('./utils');
