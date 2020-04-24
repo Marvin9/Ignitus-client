@@ -6,7 +6,7 @@ import {CoreTeam} from '../../ignitus-CoreTeam/Components';
 import {default as Team } from "../../ignitus-Team";
 import * as S from '../styles'
 
-const About: React.FunctionComponent = withErrorBoundary(() => (
+const About = withErrorBoundary(() => (
   <Fragment>
     <S.AboutSection>
       <S.AboutContainer>
