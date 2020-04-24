@@ -4,7 +4,7 @@ import {Heading2, Avatar, Button} from '../../../../../ignitus-Shared';
 import {Interface} from '../../../../styles';
 
 export const InterfaceAvatar: React.FC = () => {
-  const [,update] = useState();
+  const [, update] = useState();
   const forceUpdate = () => update({});
 
   return (
