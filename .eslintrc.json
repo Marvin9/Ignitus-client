@@ -35,7 +35,7 @@
     "extends": [
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "airbnb"
+        "airbnb-typescript"
     ],
     "rules": {
       "import/extensions": "off",
