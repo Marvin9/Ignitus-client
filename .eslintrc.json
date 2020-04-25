@@ -36,6 +36,7 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "airbnb",
+        "prettier/react",
         "prettier/@typescript-eslint",
         "plugin:prettier/recommended"
     ],
