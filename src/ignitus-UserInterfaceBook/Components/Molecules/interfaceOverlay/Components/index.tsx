@@ -1,6 +1,6 @@
 import React from 'react';
-import { Overlay, Heading2 } from '../../../../../ignitus-Shared';
-import { Interface } from '../../../../styles';
+import {Overlay, Heading2} from '../../../../../ignitus-Shared';
+import {Interface} from '../../../../styles';
 
 export const interfaceOverlay = () => (
   <Interface>

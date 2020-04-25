@@ -1,10 +1,7 @@
 import React from 'react';
 
-import {
-  Heading2,
-  DefaultInput,
-} from '../../../../../ignitus-Shared';
-import { Interface } from '../../../../styles';
+import {Heading2, DefaultInput} from '../../../../../ignitus-Shared';
+import {Interface} from '../../../../styles';
 
 export const interfaceInput: React.FC = () => (
   <Interface>

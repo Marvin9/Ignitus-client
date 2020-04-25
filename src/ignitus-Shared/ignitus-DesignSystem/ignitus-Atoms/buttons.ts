@@ -38,21 +38,21 @@ export const ParentButton = styled.button`
 
 export const Button = styled(ParentButton)<ButtonProperties>`
   outline: none;
-  color: ${(props) => getColor(props)};
-  background-color: ${(props) => getBackgroundColor(props)};
-  padding: ${(props) => getPadding(props)};
-  font-size: ${(props) => getFontSizes(props)};
-  border-radius: ${(props) => getRadius(props)};
-  border: ${(props) => getBorder(props)};
+  color: ${props => getColor(props)};
+  background-color: ${props => getBackgroundColor(props)};
+  padding: ${props => getPadding(props)};
+  font-size: ${props => getFontSizes(props)};
+  border-radius: ${props => getRadius(props)};
+  border: ${props => getBorder(props)};
 
   a {
-    color: ${(props) => getColor(props)};
+    color: ${props => getColor(props)};
   }
 
   &:hover,
   &:focus {
-    background-color: ${(props) => getHoverBackgroundColor(props)};
-    color: ${(props) => getHoverColor(props)};
+    background-color: ${props => getHoverBackgroundColor(props)};
+    color: ${props => getHoverColor(props)};
     outline: none;
 
     a {

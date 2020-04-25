@@ -2,9 +2,7 @@ import {effects} from 'redux-saga';
 import * as t from './actionTypes';
 import * as api from '../../ignitus-Api';
 
-const {
-  call, put, takeLatest, all,
-} = effects;
+const {call, put, takeLatest, all} = effects;
 
 function* getTestimonialData() {
   try {

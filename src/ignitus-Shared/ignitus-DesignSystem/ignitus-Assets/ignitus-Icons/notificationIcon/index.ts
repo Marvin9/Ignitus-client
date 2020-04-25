@@ -1,1 +1,1 @@
-export { default } from './notificationIcon';
+export {default} from './notificationIcon';

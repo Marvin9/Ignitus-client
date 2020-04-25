@@ -1,24 +1,27 @@
 import React from 'react';
-import { InputTypes } from '../types';
-import { AppIcon } from '../../../../types/iconsTypes/iconEnums';
+import {InputTypes} from '../types';
+import {AppIcon} from '../../../../types/iconsTypes/iconEnums';
 import * as I from '../styles';
 
 const DefaultMultiMediaInput = ({
-  placeholder, name, maxHeightOfInput = 200, initialHeight,
+  placeholder,
+  name,
+  maxHeightOfInput = 200,
+  initialHeight,
 }: InputTypes) => {
   let overflowVisible = false;
 
-  const setOverflowVisible = (e) => {
+  const setOverflowVisible = e => {
     e.target.style.overflow = 'visible';
     overflowVisible = true;
   };
 
-  const setOverflowHidden = (e) => {
+  const setOverflowHidden = e => {
     e.target.style.overflow = 'hidden';
     overflowVisible = false;
   };
 
-  const setHeight = (e) => {
+  const setHeight = e => {
     if (e.target.scrollHeight > maxHeightOfInput) {
       if (!overflowVisible) {
         setOverflowVisible(e);

@@ -34,8 +34,8 @@ export const Testimonial: React.FC<Props> = withErrorBoundary(
             </T.Carousel>
           )}
           <T.Navigation>
-            {testimonialData.length > 0
-              && testimonialData.map((_, index) => (
+            {testimonialData.length > 0 &&
+              testimonialData.map((_, index) => (
                 <img
                   key={_._id}
                   src={Avatars[index]}

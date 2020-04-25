@@ -1,6 +1,5 @@
 import React, {HTMLAttributes} from 'react';
 
-
 type Props = HTMLAttributes<SVGElement>;
 
 const LinkedInIcon = ({title = 'LinkedIn Icon', ...rest}: Props) => (

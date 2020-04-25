@@ -8,13 +8,17 @@ import {
 } from '../../../../ignitus-Shared';
 import {Props} from '../types';
 
-const Signup: FunctionComponent<Props> = ({signUpRequest, signUpData, clearPreviousSignUp}) => {
+const Signup: FunctionComponent<Props> = ({
+  signUpRequest,
+  signUpData,
+  clearPreviousSignUp,
+}) => {
   const [state, setState] = useState(SignupStatePayload);
   const {email, password, confirmPassword} = state;
 
-  useEffect(() => (() => clearPreviousSignUp()), []);
+  useEffect(() => () => clearPreviousSignUp(), []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     clearPreviousSignUp();
 
@@ -34,11 +38,11 @@ const Signup: FunctionComponent<Props> = ({signUpRequest, signUpData, clearPrevi
 
       if (
         !(
-          lastAtPos < lastDotPos
-          && lastAtPos > 0
-          && email.indexOf('@@') === -1
-          && lastDotPos > 2
-          && email.length - lastDotPos > 2
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          email.indexOf('@@') === -1 &&
+          lastDotPos > 2 &&
+          email.length - lastDotPos > 2
         )
       ) {
         setState({

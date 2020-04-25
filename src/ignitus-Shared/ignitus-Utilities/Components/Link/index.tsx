@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { secureRel } from './utils';
+import {secureRel} from './utils';
 
 interface Props {
   href?: string;
@@ -17,12 +17,7 @@ export const Link: React.FC<Props> = ({
   children,
   ...rest
 }) => (
-  <a
-    href={href}
-    target={target}
-    rel={secureRel({ href, target, rel })}
-    {...rest}
-  >
+  <a href={href} target={target} rel={secureRel({href, target, rel})} {...rest}>
     {children}
   </a>
 );

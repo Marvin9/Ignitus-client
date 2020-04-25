@@ -13,22 +13,38 @@ import {
   CommonSignUpUI,
 } from '../../ignitus-Authentication/ignitus-CommonAuthenticationInterface/Components';
 
-const LazyLogInStudent = lazy(() => import('../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/studenLogin'));
+const LazyLogInStudent = lazy(() =>
+  import(
+    '../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/studenLogin'
+  ),
+);
 
-const LazySignUpStudent = lazy(() => import('../../ignitus-Authentication/ignitus-CommonSignupInterface/Containers/studentSignup'));
+const LazySignUpStudent = lazy(() =>
+  import(
+    '../../ignitus-Authentication/ignitus-CommonSignupInterface/Containers/studentSignup'
+  ),
+);
 
-const LazyLogInProfessor = lazy(() => import('../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/professorLogin'));
+const LazyLogInProfessor = lazy(() =>
+  import(
+    '../../ignitus-Authentication/ignitus-CommonLoginInterface/Containers/professorLogin'
+  ),
+);
 
-const LazyProfessorSignUp = lazy(() => import('../../ignitus-Authentication/ignitus-CommonSignupInterface/Containers/professorSignup'));
+const LazyProfessorSignUp = lazy(() =>
+  import(
+    '../../ignitus-Authentication/ignitus-CommonSignupInterface/Containers/professorSignup'
+  ),
+);
 
 export const AuthenticationRoutes: React.FunctionComponent = () => (
   <Fragment>
     <Suspense
-      fallback={(
+      fallback={
         <Fragment>
           <LazyLoader />
         </Fragment>
-      )}
+      }
     >
       <Switch>
         <Route path="/login/professor" component={LazyLogInProfessor} />

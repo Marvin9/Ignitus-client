@@ -13,9 +13,8 @@ import {
 } from '../../..';
 import {Button as B} from '../../ignitus-Atoms/ignitus-defaultMulti/styles';
 
-import { Props } from './types';
-import { flexibleColDiv } from '../../shared';
-
+import {Props} from './types';
+import {flexibleColDiv} from '../../shared';
 
 export const Overlay = styled.div`
   background-image: url(${confetti});
@@ -37,10 +36,10 @@ export const BottomSection = styled(flexibleColDiv)`
 `;
 
 export const Paragraph = styled(P)<Props>`
-  color: ${(props) => (props.secondary ? GreyOne : GreySecondaryText)};
-  font-weight: ${(props) => (props.secondary ? Normal : Medium)};
-  font-size: ${(props) => (props.secondary ? XS : MD)};
-  margin-top: ${(props) => (props.secondary ? '1.5rem' : '0')};
+  color: ${props => (props.secondary ? GreyOne : GreySecondaryText)};
+  font-weight: ${props => (props.secondary ? Normal : Medium)};
+  font-size: ${props => (props.secondary ? XS : MD)};
+  margin-top: ${props => (props.secondary ? '1.5rem' : '0')};
 `;
 
 export const Button = styled(B)`

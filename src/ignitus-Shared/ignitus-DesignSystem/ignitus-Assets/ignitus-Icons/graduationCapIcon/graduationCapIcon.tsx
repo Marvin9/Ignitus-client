@@ -1,6 +1,5 @@
 import React, {HTMLAttributes} from 'react';
 
-
 type Props = HTMLAttributes<SVGElement>;
 
 const GraduationCapIcon = ({title = 'Graduation Cap Icon', ...rest}: Props) => (

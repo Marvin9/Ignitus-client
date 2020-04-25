@@ -1,1 +1,1 @@
-export { default } from './accountCircleIcon';
+export {default} from './accountCircleIcon';

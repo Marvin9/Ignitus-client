@@ -1,6 +1,5 @@
 import React, {HTMLAttributes} from 'react';
 
-
 type Props = HTMLAttributes<SVGElement>;
 
 const PdfIcon = ({title = 'Pdf Icon', ...rest}: Props) => (

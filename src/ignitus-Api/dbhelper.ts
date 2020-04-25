@@ -39,9 +39,9 @@ export async function updateDataInDB(storeName, array) {
     const store = tx.objectStore(storeName);
     await store.clear();
     await array;
-    return await Promise.all(array.map((data) => store.put(data)));
+    return await Promise.all(array.map(data => store.put(data)));
   } catch (err) {
-    return new Promise((reject) => reject(err));
+    return new Promise(reject => reject(err));
   }
 }
 
@@ -53,7 +53,7 @@ export async function getDataFromDB(storeName) {
     const data = await store.getAll();
     return data;
   } catch (err) {
-    return new Promise((reject) => reject(err));
+    return new Promise(reject => reject(err));
   }
 }
 
@@ -64,6 +64,6 @@ export async function getItemFromDB(storeName, key) {
     const store = tx.objectStore(storeName);
     return await store.get(key);
   } catch (err) {
-    return new Promise((reject) => reject(err));
+    return new Promise(reject => reject(err));
   }
 }

@@ -2,7 +2,10 @@ import React, {HTMLAttributes} from 'react';
 
 type Props = HTMLAttributes<SVGElement>;
 
-export const EyeVisibleOnIcon = ({title = 'Eye Visible On Icon', ...rest}: Props) => (
+export const EyeVisibleOnIcon = ({
+  title = 'Eye Visible On Icon',
+  ...rest
+}: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"

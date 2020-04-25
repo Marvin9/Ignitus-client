@@ -1,1 +1,1 @@
-export { default } from './mentorsIcon';
+export {default} from './mentorsIcon';

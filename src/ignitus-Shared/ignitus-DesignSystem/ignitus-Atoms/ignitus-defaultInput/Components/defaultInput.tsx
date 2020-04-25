@@ -1,6 +1,6 @@
 import React from 'react';
-import { InputType } from '../types';
-import { Input } from '../styles';
+import {InputType} from '../types';
+import {Input} from '../styles';
 
 const DefaultInput = ({placeholder, type, name}: InputType) => (
   <React.Fragment>

@@ -17,7 +17,7 @@ export const TeamItemTitle = styled(Heading6)`
   margin-top: 1rem;
 `;
 
-styled.a((props) => ({color: props.color}));
+styled.a(props => ({color: props.color}));
 
 export const LinkWrapper = styled.div<LinkWrapperProps>(
   {
@@ -27,7 +27,7 @@ export const LinkWrapper = styled.div<LinkWrapperProps>(
     alignItems: 'center',
     marginTop: '0.5rem',
   },
-  (props) => ({display: props.toggle ? 'flex' : 'none'}),
+  props => ({display: props.toggle ? 'flex' : 'none'}),
 );
 
 export const PureCoreTeam = styled.div`
@@ -109,6 +109,6 @@ export const AngelList = styled(Icon)`
   }
 `;
 
-export const Link = styled(T.Link)<TeamItemTitleProps>((props) => ({
+export const Link = styled(T.Link)<TeamItemTitleProps>(props => ({
   color: props.color,
 }));

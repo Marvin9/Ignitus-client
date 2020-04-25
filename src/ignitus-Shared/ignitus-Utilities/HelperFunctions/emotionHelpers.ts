@@ -31,7 +31,8 @@ export const getPadding = ({size}: ButtonProperties) => {
     case AppSize.Small:
       return '4px 15px';
 
-    case AppSize.Medium: default:
+    case AppSize.Medium:
+    default:
       return '8px 20px';
 
     case AppSize.Large:
@@ -44,7 +45,8 @@ export const getInputPadding = ({size}: ButtonProperties) => {
     case AppSize.Small:
       return '6px 4px';
 
-    case AppSize.Medium: default:
+    case AppSize.Medium:
+    default:
       return '10px 4px';
 
     case AppSize.Large:
@@ -57,7 +59,8 @@ export const getFontSizes = ({size}: ButtonProperties) => {
     case AppSize.Small:
       return XXS;
 
-    case AppSize.Medium: default:
+    case AppSize.Medium:
+    default:
       return SM;
 
     case AppSize.Large:
@@ -70,7 +73,8 @@ export const getRadius = ({size}: ButtonProperties) => {
     case AppSize.Small:
       return '3px';
 
-    case AppSize.Medium: default:
+    case AppSize.Medium:
+    default:
       return '3px';
 
     case AppSize.Large:
@@ -83,7 +87,8 @@ export const getIconDimension = ({size}: ButtonProperties) => {
     case AppSize.Small:
       return '0.7rem';
 
-    case AppSize.Medium: default:
+    case AppSize.Medium:
+    default:
       return '0.9rem';
 
     case AppSize.Large:
@@ -118,7 +123,8 @@ export const getColor = ({category}: ButtonProperties) => {
 
 export const getBackgroundColor = ({category}: ButtonProperties) => {
   switch (category) {
-    case CategoryEnums.Primary: default:
+    case CategoryEnums.Primary:
+    default:
       return IgnitusBlue;
 
     case CategoryEnums.Secondary:
@@ -202,7 +208,7 @@ export const getMessageColor = ({type}: MessageProps) => {
   }
 };
 
-export const hexDifferentiate = (color) => {
+export const hexDifferentiate = color => {
   const result = hexArray.indexOf(color);
   return !(result === -1);
 };

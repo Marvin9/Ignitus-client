@@ -1,6 +1,6 @@
 import React from 'react';
-import { Interface } from '../../../../styles';
-import { Card, Heading2 } from '../../../../../ignitus-Shared';
+import {Interface} from '../../../../styles';
+import {Card, Heading2} from '../../../../../ignitus-Shared';
 
 export const interfaceCards: React.FC = () => (
   <Interface>

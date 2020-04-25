@@ -1,7 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {
-  Container, Paragraph, TopSection, BottomSection, Button,
+  Container,
+  Paragraph,
+  TopSection,
+  BottomSection,
+  Button,
 } from '../styles';
 import {withErrorBoundary} from '../../../ignitus-Shared';
 

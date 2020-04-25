@@ -1,1 +1,1 @@
-export { default } from './videoLibraryIcon';
+export {default} from './videoLibraryIcon';

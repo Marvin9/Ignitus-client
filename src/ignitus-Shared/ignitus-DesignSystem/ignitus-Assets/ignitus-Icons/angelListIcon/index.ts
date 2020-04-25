@@ -1,1 +1,1 @@
-export { default } from './angelListIcon';
+export {default} from './angelListIcon';

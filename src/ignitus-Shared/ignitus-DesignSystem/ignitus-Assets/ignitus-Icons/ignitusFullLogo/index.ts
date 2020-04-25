@@ -1,1 +1,1 @@
-export { default } from './ignitusFullLogo';
+export {default} from './ignitusFullLogo';

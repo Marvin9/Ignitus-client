@@ -1,4 +1,4 @@
-import { isString, isObject } from '../../ignitus-Shared';
+import {isString, isObject} from '../../ignitus-Shared';
 import * as t from './actionTypes';
 
 export const logInRequest = (email, password, userType) => {
@@ -8,14 +8,17 @@ export const logInRequest = (email, password, userType) => {
   }
 
   return {
-    type: t.LOG_IN_REQUEST, email, password, userType,
+    type: t.LOG_IN_REQUEST,
+    email,
+    password,
+    userType,
   };
 };
 
-export const logInResponse = (data) => {
+export const logInResponse = data => {
   if (!isObject(data)) throw new Error(`data should be object: ${data}`);
-  return { type: t.LOG_IN_RESPONSE, data };
+  return {type: t.LOG_IN_RESPONSE, data};
 };
 
-export const logUserOut = () => ({ type: t.LOG_USER_OUT });
-export const clearPreviousLogin = () => ({ type: t.LOG_IN_CLEAR_PREVIOUS });
+export const logUserOut = () => ({type: t.LOG_USER_OUT});
+export const clearPreviousLogin = () => ({type: t.LOG_IN_CLEAR_PREVIOUS});

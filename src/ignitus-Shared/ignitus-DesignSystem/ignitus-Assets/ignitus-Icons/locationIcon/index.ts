@@ -1,1 +1,1 @@
-export { default } from './locationIcon';
+export {default} from './locationIcon';

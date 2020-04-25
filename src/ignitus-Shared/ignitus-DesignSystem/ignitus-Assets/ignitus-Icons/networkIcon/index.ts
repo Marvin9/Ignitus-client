@@ -1,1 +1,1 @@
-export { default } from './networkIcon';
+export {default} from './networkIcon';

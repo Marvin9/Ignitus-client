@@ -20,7 +20,7 @@ const NavigationLayers = ({
   level,
 }: NavigationLayerProps) => (
   <React.Fragment>
-    {edges.map((edge) => (
+    {edges.map(edge => (
       <Layers edge={edge} nesting={nesting} key={edge.title} level={level} />
     ))}
   </React.Fragment>
@@ -37,8 +37,7 @@ const Layers = ({edge, nesting, level}: any) => {
           level={level}
         >
           {' '}
-          <S.Heading nesting={nesting}>{edge.title}</S.Heading>
-          {' '}
+          <S.Heading nesting={nesting}>{edge.title}</S.Heading>{' '}
           <S.Arrow
             name={AppIcon.KeyBoardArrowRight}
             isexpanded={isexpanded}
@@ -56,9 +55,7 @@ const Layers = ({edge, nesting, level}: any) => {
   );
 };
 
-const Extension = ({
-  isexpanded, edge, nesting, level,
-}) => {
+const Extension = ({isexpanded, edge, nesting, level}) => {
   if (edge.route) {
     return (
       <Link to={edge.route} key={edge.title}>
@@ -72,11 +69,7 @@ const Extension = ({
   return (
     edge.children && (
       <S.UnorderedList isexpanded={isexpanded}>
-        <NavigationLayers
-          edges={edge.children}
-          nesting
-          level={level + 1}
-        />
+        <NavigationLayers edges={edge.children} nesting level={level + 1} />
       </S.UnorderedList>
     )
   );

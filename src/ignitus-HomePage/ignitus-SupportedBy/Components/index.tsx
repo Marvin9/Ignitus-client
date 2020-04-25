@@ -12,12 +12,10 @@ const PureSupportedBy = ({data, type, paragraph}: Props) => (
     <T.TopSection>
       <T.Title>{type}</T.Title>
       <S.Paragraph>
-        Supported with
-        {' '}
+        Supported with{' '}
         <S.Icon>
           <S.Heart />
-        </S.Icon>
-        {' '}
+        </S.Icon>{' '}
         {paragraph}
       </S.Paragraph>
     </T.TopSection>

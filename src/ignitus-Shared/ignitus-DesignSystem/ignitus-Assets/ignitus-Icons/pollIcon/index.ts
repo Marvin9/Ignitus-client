@@ -1,1 +1,1 @@
-export { default } from './pollIcon';
+export {default} from './pollIcon';

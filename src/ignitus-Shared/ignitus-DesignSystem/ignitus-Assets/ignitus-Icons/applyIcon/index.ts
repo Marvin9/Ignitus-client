@@ -1,1 +1,1 @@
-export { default } from './applyIcon';
+export {default} from './applyIcon';

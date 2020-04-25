@@ -9,8 +9,7 @@ export default function DashboardFooter() {
           <S.FooterRow>
             <li>
               {' '}
-              <a href="#!">About</a>
-              {' '}
+              <a href="#!">About</a>{' '}
             </li>
             <li>
               {' '}
@@ -18,8 +17,7 @@ export default function DashboardFooter() {
             </li>
             <li>
               {' '}
-              <a href="#!">Careers</a>
-              {' '}
+              <a href="#!">Careers</a>{' '}
             </li>
           </S.FooterRow>
         </S.FooterSections>
@@ -27,8 +25,7 @@ export default function DashboardFooter() {
           <S.FooterRow>
             <li>
               {' '}
-              <a href="#!">Help Center</a>
-              {' '}
+              <a href="#!">Help Center</a>{' '}
             </li>
             <li>
               {' '}

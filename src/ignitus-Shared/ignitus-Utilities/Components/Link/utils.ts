@@ -12,9 +12,11 @@ const isIgnitusUrl = (url: string = '') => {
   return matches[0].length === url.length;
 };
 
-export const secureRel = ({ href, target, rel }) => {
+export const secureRel = ({href, target, rel}) => {
   const isSecureUrl = !!href && isIgnitusUrl(href);
-  const relProp = rel ? rel.split(' ').filter((part) => !!part.length && part !== 'noreferrer') : [];
+  const relProp = rel
+    ? rel.split(' ').filter(part => !!part.length && part !== 'noreferrer')
+    : [];
 
   // if url is not part of 'ignitus.org' => add noreferrer rel
   if (!isSecureUrl) {
@@ -22,7 +24,11 @@ export const secureRel = ({ href, target, rel }) => {
   }
 
   // https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
-  if (!!target && target.includes('_blank') && relProp.indexOf('noopener') === -1) {
+  if (
+    !!target &&
+    target.includes('_blank') &&
+    relProp.indexOf('noopener') === -1
+  ) {
     relProp.push('noopener');
   }
 

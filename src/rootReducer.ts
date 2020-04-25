@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 import testimonial from './ignitus-HomePage/ignitus-Testimonial';
 import contributors from './ignitus-AboutPage/ignitus-Team';
 import sharedLogin from './ignitus-Authentication/ignitus-CommonLoginInterface';

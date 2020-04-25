@@ -24,8 +24,7 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
     <A.RightColumnTwo>
       <A.Paragraph>Let&apos;s get started</A.Paragraph>
       <A.Paragraph>
-        Skyrocket your career with best global opportunities.
-        {' '}
+        Skyrocket your career with best global opportunities.{' '}
         <span role="img" aria-label="hat">
           🎓
         </span>
@@ -35,9 +34,7 @@ export const SideWrapper: FunctionComponent<SideWrapperProps> = ({
           to={`/${authenticationType.toLocaleLowerCase()}/${alternateRole.toLocaleLowerCase()}`}
         >
           {' '}
-          I am a
-          {' '}
-          {alternateRole}
+          I am a {alternateRole}
         </Link>
       </A.Paragraph>
     </A.RightColumnTwo>

@@ -1,1 +1,1 @@
-export { default } from './crossIcon';
+export {default} from './crossIcon';

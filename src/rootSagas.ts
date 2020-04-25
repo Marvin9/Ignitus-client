@@ -1,4 +1,4 @@
-import { all } from 'redux-saga/effects';
+import {all} from 'redux-saga/effects';
 import Testimonial from './ignitus-HomePage/ignitus-Testimonial';
 import contributors from './ignitus-AboutPage/ignitus-Team';
 import login from './ignitus-Authentication/ignitus-CommonLoginInterface';

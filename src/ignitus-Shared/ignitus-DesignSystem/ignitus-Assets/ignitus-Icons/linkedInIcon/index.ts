@@ -1,1 +1,1 @@
-export { default } from './linkedInIcon';
+export {default} from './linkedInIcon';

@@ -1,1 +1,1 @@
-export { default as interfaceTags } from './interfaceTags';
+export {default as interfaceTags} from './interfaceTags';

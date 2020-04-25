@@ -1,1 +1,1 @@
-export { default } from './bookmarkIcon';
+export {default} from './bookmarkIcon';

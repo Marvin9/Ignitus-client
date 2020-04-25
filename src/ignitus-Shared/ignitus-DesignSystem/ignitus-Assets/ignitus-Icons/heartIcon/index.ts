@@ -1,1 +1,1 @@
-export { default } from './heartIcon';
+export {default} from './heartIcon';

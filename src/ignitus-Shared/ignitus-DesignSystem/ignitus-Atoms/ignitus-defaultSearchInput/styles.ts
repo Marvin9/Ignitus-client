@@ -1,7 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  IgnitusBlue, White, Red, GreyOne,
-} from '../colors';
+import {IgnitusBlue, White, Red, GreyOne} from '../colors';
 import {SM} from '../fonts';
 import Icon from '../../../ignitus-Utilities/Components/icon';
 import {flexibleRowDiv} from '../../shared';

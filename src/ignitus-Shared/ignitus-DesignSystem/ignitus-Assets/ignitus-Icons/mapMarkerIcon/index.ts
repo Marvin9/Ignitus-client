@@ -1,1 +1,1 @@
-export { default } from './mapMarkerIcon';
+export {default} from './mapMarkerIcon';

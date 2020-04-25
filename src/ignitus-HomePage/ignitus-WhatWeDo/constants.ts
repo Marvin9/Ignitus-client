@@ -10,8 +10,7 @@ export const data: WhatWeDo[] = [
       "Top quality 'Ignitus-Exclusive' internships and freelance work with professors, researchers, companies and professionals from selected destinations.",
   },
   {
-    src:
-      'https://storage.googleapis.com/ignitus_assets/ig-section/courses.png',
+    src: 'https://storage.googleapis.com/ignitus_assets/ig-section/courses.png',
     title: 'Courses',
     description:
       'Unique, well researched and goal-oriented courses designed to boost relevant skill acquisition with minimal effort and time.',

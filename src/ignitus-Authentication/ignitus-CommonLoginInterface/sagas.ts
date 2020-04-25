@@ -1,18 +1,16 @@
-import { effects } from 'redux-saga';
+import {effects} from 'redux-saga';
 import * as t from './actionTypes';
 import * as a from './actions';
 import * as api from '../../ignitus-Api';
 
-const {
-  call, put, takeLatest, all,
-} = effects;
+const {call, put, takeLatest, all} = effects;
 
 function* signIn(action) {
-  const { email, password, userType } = action;
+  const {email, password, userType} = action;
   try {
     const data = yield call(api.signIn, email, password, userType);
     if (!data.data.data) {
-      throw new Error({ ...data });
+      throw new Error({...data});
     } else {
       localStorage.setItem('authenticated', 'true');
       localStorage.setItem('data', JSON.stringify(data.data.data.clientData));

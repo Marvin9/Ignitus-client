@@ -7,8 +7,8 @@ import {
   Heading2,
 } from '../../../../../ignitus-Shared';
 
-import { NavigationContainer } from '../style';
-import { Interface } from '../../../../styles';
+import {NavigationContainer} from '../style';
+import {Interface} from '../../../../styles';
 
 export const interfaceNavigation: React.FC = () => (
   <Interface>

@@ -1,6 +1,5 @@
 import React, {HTMLAttributes} from 'react';
 
-
 type Props = HTMLAttributes<SVGElement>;
 
 const GooglePlusIcon = ({title = 'Google Plus Icon', ...rest}: Props) => (

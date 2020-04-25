@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { DefaultTag2 } from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
+import {DefaultTag2} from '../../../../ignitus-Shared/ignitus-DesignSystem/ignitus-Atoms/ignitus-defaultTag/Components';
 
 export const TagsContainer = styled.nav`
   padding: 2rem;

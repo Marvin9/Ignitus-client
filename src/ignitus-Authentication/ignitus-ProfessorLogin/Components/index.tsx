@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 
 import {
   SharedAuthentication,
@@ -22,11 +22,11 @@ const Login: React.FC<LogInProps> = ({
   const professorLogInData: AuthData = logInData;
 
   const [state, setState] = useState(LoginStatePayload);
-  const { email, password } = state;
+  const {email, password} = state;
 
-  useEffect(() => (() => clearPreviousLogin()), [clearPreviousLogin]);
+  useEffect(() => () => clearPreviousLogin(), [clearPreviousLogin]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     clearPreviousLogin();
 
@@ -45,11 +45,11 @@ const Login: React.FC<LogInProps> = ({
 
       if (
         !(
-          lastAtPos < lastDotPos
-          && lastAtPos > 0
-          && email.indexOf('@@') === -1
-          && lastDotPos > 2
-          && email.length - lastDotPos > 2
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          email.indexOf('@@') === -1 &&
+          lastDotPos > 2 &&
+          email.length - lastDotPos > 2
         )
       ) {
         setState({

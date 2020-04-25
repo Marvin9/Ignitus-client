@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from '../style';
 import {AppIcon} from '../../../../../types/iconsTypes/iconEnums';
-import { Paragraph } from '../../../../ignitus-Atoms/typography';
-import { IgnitusBlue } from '../../../../ignitus-Atoms/colors';
+import {Paragraph} from '../../../../ignitus-Atoms/typography';
+import {IgnitusBlue} from '../../../../ignitus-Atoms/colors';
 
 type props = {
   text: string;

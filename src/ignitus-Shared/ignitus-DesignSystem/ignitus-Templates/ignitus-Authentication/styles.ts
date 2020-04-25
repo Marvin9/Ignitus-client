@@ -1,8 +1,5 @@
 import styled from '@emotion/styled';
-import {
-  BootStrapSection,
-  flexibleColDiv,
-} from '../../shared';
+import {BootStrapSection, flexibleColDiv} from '../../shared';
 
 import {
   SecondaryColor,
@@ -161,7 +158,7 @@ export const ButtonContainer = styled.div`
 
 export const Message = styled.div<MessageProps>`
   margin: 0.2rem 0;
-  background-color: ${(props) => getMessageColor(props)};
+  background-color: ${props => getMessageColor(props)};
   padding: 0.5rem 0.7rem;
   border-radius: 0.5rem;
 

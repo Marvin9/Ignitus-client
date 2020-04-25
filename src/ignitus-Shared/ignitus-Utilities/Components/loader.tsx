@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {default as L} from '../../ignitus-DesignSystem/ignitus-Assets/ignitus-Logos/ignitusLoader.gif';
 
 const Container = styled.div`
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;

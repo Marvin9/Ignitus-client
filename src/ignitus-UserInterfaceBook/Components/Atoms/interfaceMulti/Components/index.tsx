@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { DefaultMultiMediaInput, Heading2 } from '../../../../../ignitus-Shared';
-import { Interface } from '../../../../styles';
+import {DefaultMultiMediaInput, Heading2} from '../../../../../ignitus-Shared';
+import {Interface} from '../../../../styles';
 
 export const interfaceMultiMediaInput = () => (
   <Interface>

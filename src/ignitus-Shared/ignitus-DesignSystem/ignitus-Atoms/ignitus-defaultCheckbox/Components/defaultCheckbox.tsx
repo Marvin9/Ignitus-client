@@ -1,6 +1,6 @@
 import React from 'react';
 import {CheckBoxType} from '../types';
-import { CheckBox, Label, StyledParagraph } from '../styles';
+import {CheckBox, Label, StyledParagraph} from '../styles';
 
 const DefaultCheckbox = ({label, value}: CheckBoxType) => (
   <React.Fragment>

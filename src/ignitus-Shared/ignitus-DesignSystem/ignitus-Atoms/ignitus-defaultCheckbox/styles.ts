@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { Paragraph } from '../typography';
-import { MD } from '../fonts';
+import {Paragraph} from '../typography';
+import {MD} from '../fonts';
 
 export const CheckBox = styled.input`
   height: 1rem;
@@ -12,5 +12,5 @@ export const Label = styled.label`
 `;
 
 export const StyledParagraph = styled(Paragraph)`
-  font-size: ${MD}
+  font-size: ${MD};
 `;

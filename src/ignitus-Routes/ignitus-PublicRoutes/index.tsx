@@ -1,10 +1,14 @@
 import React, {Suspense, lazy, Fragment} from 'react';
 import {Switch, Route} from 'react-router-dom';
-import {Notfound, Footer, OptionalNavigation as Navigation} from '../../ignitus-Shared';
+import {
+  Notfound,
+  Footer,
+  OptionalNavigation as Navigation,
+} from '../../ignitus-Shared';
 import {Home} from '../../ignitus-HomePage/ignitus-Home/Components/index';
 import {AuthenticationRoutes} from '../ignitus-AuthenticationRoutes';
 import {LazyLoader} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
-import { StudentProfile } from '../../ignitus-Profile/ignitus-StudentProfile/Components';
+import {StudentProfile} from '../../ignitus-Profile/ignitus-StudentProfile/Components';
 
 /**
  * Route-based code splitting.
@@ -19,7 +23,9 @@ import { StudentProfile } from '../../ignitus-Profile/ignitus-StudentProfile/Com
  * https://reactjs.org/docs/code-splitting.html
  */
 
-const LazyAboutComponent = lazy(() => import('../../ignitus-AboutPage/ignitus-About/Components'));
+const LazyAboutComponent = lazy(() =>
+  import('../../ignitus-AboutPage/ignitus-About/Components'),
+);
 
 export const PublicRoutes: React.FunctionComponent = () => (
   <Fragment>
@@ -32,11 +38,11 @@ export const PublicRoutes: React.FunctionComponent = () => (
       <Route component={Navigation} />
     </Switch>
     <Suspense
-      fallback={(
+      fallback={
         <Fragment>
           <LazyLoader />
         </Fragment>
-        )}
+      }
     >
       <Switch>
         <Route path="/aboutus" component={LazyAboutComponent} />

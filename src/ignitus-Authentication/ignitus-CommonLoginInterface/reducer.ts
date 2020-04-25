@@ -8,12 +8,12 @@ const RESET = {
 };
 
 const loginReducer = (
-  state = { isFetching: false, message: '', success: false },
+  state = {isFetching: false, message: '', success: false},
   action,
 ) => {
   switch (action.type) {
     case t.LOG_IN_RESPONSE:
-      return { ...state, isFetching: false, ...action.data};
+      return {...state, isFetching: false, ...action.data};
 
     case t.LOG_IN_REQUEST:
       return {

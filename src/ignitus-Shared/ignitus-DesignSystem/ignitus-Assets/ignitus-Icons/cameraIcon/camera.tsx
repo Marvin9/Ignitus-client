@@ -1,6 +1,5 @@
 import React, {HTMLAttributes} from 'react';
 
-
 type Props = HTMLAttributes<SVGElement>;
 
 const CameraIcon = ({title = 'Camera Icon', ...rest}: Props) => (

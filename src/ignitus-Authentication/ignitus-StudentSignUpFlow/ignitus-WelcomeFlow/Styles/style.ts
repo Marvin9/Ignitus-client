@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
-import { minimumWidthQuery } from '../../../../ignitus-Shared';
-import { flexibleColDiv } from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {minimumWidthQuery} from '../../../../ignitus-Shared';
+import {flexibleColDiv} from '../../../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const WelcomeContainer = styled(flexibleColDiv)`
   background: white;
@@ -13,8 +13,7 @@ export const Progress = styled.img`
   max-width: 100%;
 `;
 
-export const TopSection = styled(flexibleColDiv)`
-`;
+export const TopSection = styled(flexibleColDiv)``;
 
 export const DefaultDropdownContainer = styled.div`
   margin: 1rem;

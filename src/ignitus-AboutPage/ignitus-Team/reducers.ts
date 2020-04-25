@@ -3,10 +3,10 @@ import {TeamActionType, TeamReducerReturnType} from './types';
 
 const initialState = {presets: [], isFetching: false};
 function setContributorsData(action: TeamActionType) {
-  return { presets: action.data, isFetching: false};
+  return {presets: action.data, isFetching: false};
 }
 function getContributorsData() {
-  return { isFetching: true, presets: []};
+  return {isFetching: true, presets: []};
 }
 
 const contributorsReducer = (

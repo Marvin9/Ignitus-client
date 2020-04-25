@@ -109,7 +109,8 @@ const Icon = ({name, ...rest}: Props) => {
     case AppIcon.KeyBoardArrowRight:
       return <KeyBoardArrowRight {...rest} />;
 
-    case AppIcon.IgnitusFullLogo: default:
+    case AppIcon.IgnitusFullLogo:
+    default:
       return <IgnitusFullLogo {...rest} />;
 
     case AppIcon.CreateIcon:

@@ -9,9 +9,7 @@ export const InterfaceAvatar: React.FC = () => {
 
   return (
     <Interface>
-      <Heading2>
-        Random Avatar
-      </Heading2>
+      <Heading2>Random Avatar</Heading2>
       <hr />
       <Avatar />
       <br />

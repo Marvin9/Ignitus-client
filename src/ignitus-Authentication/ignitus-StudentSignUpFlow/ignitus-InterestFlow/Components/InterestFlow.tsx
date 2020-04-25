@@ -2,8 +2,8 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { FunctionComponent } from 'react';
-import { Link } from 'react-router-dom';
+import React, {FunctionComponent} from 'react';
+import {Link} from 'react-router-dom';
 import {
   Paragraph,
   Heading1,
@@ -17,7 +17,10 @@ import * as C from '../Styles/style';
 const InterestFlow: FunctionComponent = () => (
   <T.WelcomeContainer>
     <T.TopSection>
-      <T.Progress src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressTwo.png" alt="progress-bar" />
+      <T.Progress
+        src="https://storage.googleapis.com/ignitus_assets/ig-assets/progressTwo.png"
+        alt="progress-bar"
+      />
       <Heading1>What are you interested in?</Heading1>
       <Paragraph>This will customize your experience.</Paragraph>
       <Paragraph>
@@ -43,7 +46,10 @@ const InterestFlow: FunctionComponent = () => (
         </form>
       </C.LeftSection>
       <C.RightSection>
-        <C.InterestImage src="https://storage.googleapis.com/ignitus_assets/ig-assets/interestFlow.png" alt="interests" />
+        <C.InterestImage
+          src="https://storage.googleapis.com/ignitus_assets/ig-assets/interestFlow.png"
+          alt="interests"
+        />
       </C.RightSection>
     </T.MiddleSection>
     <T.BottomSection>

@@ -3,7 +3,7 @@ import {avatars} from '../avatars';
 import {AvatarImage} from '../styles';
 import {avatar} from '../types';
 
-const randomAvatar = () => (avatars[Math.floor(Math.random() * avatars.length)]);
+const randomAvatar = () => avatars[Math.floor(Math.random() * avatars.length)];
 
 export const Avatar: React.FC<HTMLAttributes<HTMLImageElement>> = ({
   ...all

@@ -1,1 +1,1 @@
-export { default } from './KeyBoardArrowRight';
+export {default} from './KeyBoardArrowRight';

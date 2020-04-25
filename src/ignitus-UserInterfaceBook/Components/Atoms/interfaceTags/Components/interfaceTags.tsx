@@ -25,11 +25,7 @@ const interfaceTags: React.FC = () => (
     />
 
     <br />
-    <DefaultTag3
-      label="Full Time"
-      color={C.White}
-      background={C.IgnitusBlue}
-    />
+    <DefaultTag3 label="Full Time" color={C.White} background={C.IgnitusBlue} />
     <br />
     <DefaultTag3
       label="Literature"

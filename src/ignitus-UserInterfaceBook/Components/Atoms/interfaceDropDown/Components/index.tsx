@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {cars} from '../constants';
-import { Interface } from '../../../../styles';
+import {Interface} from '../../../../styles';
 import {
   DefaultDropdown,
   Heading2,

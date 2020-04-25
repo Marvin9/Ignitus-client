@@ -23,8 +23,7 @@ export const SideProfileCard = ({
         <S.ButtonContainer>
           <Button category="primary" size="medium">
             {' '}
-            ViewProfile
-            {' '}
+            ViewProfile{' '}
           </Button>
         </S.ButtonContainer>
       </S.ProfileContainer>

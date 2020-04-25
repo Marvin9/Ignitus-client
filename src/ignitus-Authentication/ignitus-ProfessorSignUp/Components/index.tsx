@@ -9,15 +9,17 @@ import {
 import {Props} from '../types';
 
 const SignUp: React.FC<Props> = ({
-  signUpData, signUpRequest, clearPreviousSignUp,
+  signUpData,
+  signUpRequest,
+  clearPreviousSignUp,
 }) => {
   const [state, setState] = useState(SignupStatePayload);
 
-  const { email, password, confirmPassword } = state;
+  const {email, password, confirmPassword} = state;
 
-  useEffect(() => (() => clearPreviousSignUp()), []);
+  useEffect(() => () => clearPreviousSignUp(), []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     clearPreviousSignUp();
 
@@ -37,11 +39,11 @@ const SignUp: React.FC<Props> = ({
 
       if (
         !(
-          lastAtPos < lastDotPos
-          && lastAtPos > 0
-          && email.indexOf('@@') === -1
-          && lastDotPos > 2
-          && email.length - lastDotPos > 2
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          email.indexOf('@@') === -1 &&
+          lastDotPos > 2 &&
+          email.length - lastDotPos > 2
         )
       ) {
         setState({

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { flexibleColDiv } from '../../shared';
+import {flexibleColDiv} from '../../shared';
 
 export const Container = styled(flexibleColDiv)`
   margin-top: 6rem;

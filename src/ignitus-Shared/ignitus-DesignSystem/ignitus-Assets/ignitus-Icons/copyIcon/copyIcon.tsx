@@ -1,6 +1,5 @@
 import React, {HTMLAttributes} from 'react';
 
-
 type Props = HTMLAttributes<SVGElement>;
 
 const CopyIcon = ({title = 'Copy Icon', ...rest}: Props) => (

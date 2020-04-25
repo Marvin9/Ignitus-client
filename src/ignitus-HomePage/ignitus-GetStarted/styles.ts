@@ -7,7 +7,7 @@ import {
   White,
   IgnitusBlue,
 } from '../../ignitus-Shared';
-import { flexibleColDiv } from '../../ignitus-Shared/ignitus-DesignSystem/shared';
+import {flexibleColDiv} from '../../ignitus-Shared/ignitus-DesignSystem/shared';
 
 export const Container = styled(flexibleColDiv)`
   background-color: ${IgnitusBlue};

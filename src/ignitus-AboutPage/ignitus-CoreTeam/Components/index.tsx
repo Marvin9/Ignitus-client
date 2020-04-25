@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 
-import { Data } from '../constants';
-import { withErrorBoundary, AppIcon, Paragraph } from '../../../ignitus-Shared';
-import { Team, TeamItemProps } from '../types';
+import {Data} from '../constants';
+import {withErrorBoundary, AppIcon, Paragraph} from '../../../ignitus-Shared';
+import {Team, TeamItemProps} from '../types';
 
 import * as S from '../styles';
 import * as T from '../../../ignitus-Shared/ignitus-DesignSystem/shared';
@@ -17,9 +17,7 @@ const PureCoreTeam = ({team}: any) => (
 );
 
 const TeamItem = ({
-  item: {
-    title, img, description, linkedin, angellist,
-  },
+  item: {title, img, description, linkedin, angellist},
 }: TeamItemProps) => {
   const [value, setValue] = React.useState(false);
   return (
@@ -45,6 +43,8 @@ const TeamItem = ({
 };
 
 export const CoreTeam = withErrorBoundary(() => {
-  const team = Data.map((item: Team) => <TeamItem key={item.title} item={item} />);
+  const team = Data.map((item: Team) => (
+    <TeamItem key={item.title} item={item} />
+  ));
   return <PureCoreTeam team={team} />;
 });

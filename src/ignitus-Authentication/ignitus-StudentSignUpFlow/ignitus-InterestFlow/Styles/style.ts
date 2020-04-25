@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { minimumWidthQuery } from '../../../../ignitus-Shared';
+import {minimumWidthQuery} from '../../../../ignitus-Shared';
 
 export const InterestImage = styled.img``;
 

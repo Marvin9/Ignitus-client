@@ -9,6 +9,5 @@ export const mapStateToProps = createStructuredSelector({
   logInData: makeSelectData(),
 });
 
-export const mapDispatchToProps = (dispatch) => (
-  bindActionCreators({logInRequest, clearPreviousLogin}, dispatch)
-);
+export const mapDispatchToProps = dispatch =>
+  bindActionCreators({logInRequest, clearPreviousLogin}, dispatch);
