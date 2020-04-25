@@ -39,7 +39,8 @@
     "lint:fix": "eslint ./src --ext .ts,.tsx --fix",
     "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
-    "test:update": "npm test --updateSnapshot"
+    "test:update": "npm test --updateSnapshot",
+    "ci": "CI=true react-scripts test && npm run lint"
   },
   "devDependencies": {
     "@types/eslint": "^6.1.8",
@@ -79,7 +80,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "CI=true react-scripts test"
+      "pre-commit": "npm run ci"
     }
   },
   "browserslist": [
